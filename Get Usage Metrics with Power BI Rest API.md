@@ -12,8 +12,6 @@ The whole process will be broken into the following sections:
 4. Setting up a token
 5. Getting data from edpoints
 6. Extracting the data
-7. Final thoughts
-8. Common problems
 
 #  Overwiew and how it works
 
