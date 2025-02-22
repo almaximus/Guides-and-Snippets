@@ -27,4 +27,17 @@ The whole process will be broken into the following sections:
  
 * Use this [playground](https://learn.microsoft.com/en-us/rest/api/power-bi/apps/get-app#code-try-0) to see how endpoints work.
 
-# 
+# Giving permissions to a user and setting up a Service Principal
+
+First, create a Service Principal in this portal https://portal.azure.com/#home following these steps:
+
+1.	In the search bar above enter “app registrations” and click on the service when it pops up.
+2.	Click on “New Registration” and enter a distinctive name in the “Name” section. You will be redirected to Overview page.
+3.	Under “Manage” section on the left pane go to “Certificates and secretes” -> “Client secrets” section -> “New client secret”. In a new window set an expiration date and click “Add” to create a secret.
+> ❗❗❗WARNING!  The secret will be provided only once and can’t be retrieved in any way once you leave the page. Copy the secret and store it in a safe place before leaving this page!
+4.	Under “Manage” section go to “API Permissions” -> “Add a permission” -> “Power BI Service” -> “Delegated permissions".
+5.	In “Request API Permissions” select permissions you need for a desired endpoint. For the usage metrics it’s crucial to have Tenant.Read.All and Tenant.ReadWrite.All permissions which require consent from a Global Admin for this Service Principal. 
+6.	Go to Azure portal, enter “groups” in the search bar, click on the service, then click on “New group”, you will be redirected to New Group page. 
+7.	Enter the Group Name, make sure the Group Type is “Security” then under “Members” click on “No members selected”, add the service principal in “Add Members” window, click on “Select”, click on “Create”. The new security group will be created after some time.
+
+Check this [instruction] (https://prodata.ie/2023/11/15/service-principal-fabric/) for a visualized guidance
