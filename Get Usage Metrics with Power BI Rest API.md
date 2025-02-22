@@ -10,8 +10,7 @@ The whole process will be broken into the following sections:
 2. Giving permissions to a user and setting up a Service Principal
 3. Giving permissions to the Service Principal on Power BI side
 4. Setting up a token
-5. Getting data from edpoints
-6. Extracting the data
+5. Extracting the data
 
 #  Overwiew and how it works
 
