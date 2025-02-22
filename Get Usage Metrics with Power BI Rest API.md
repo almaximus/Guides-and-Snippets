@@ -29,7 +29,7 @@ The whole process will be broken into the following sections:
 
 # Giving permissions to a user and setting up a Service Principal
 
-First, create a Service Principal in this portal https://portal.azure.com/#home following these steps:
+First, create a Service Principal in [this portal](https://portal.azure.com/#home) following these steps:
 
 1.	In the search bar above enter “app registrations” and click on the service when it pops up.
 2.	Click on “New Registration” and enter a distinctive name in the “Name” section. You will be redirected to Overview page.
@@ -40,4 +40,4 @@ First, create a Service Principal in this portal https://portal.azure.com/#home 
 6.	Go to Azure portal, enter “groups” in the search bar, click on the service, then click on “New group”, you will be redirected to New Group page. 
 7.	Enter the Group Name, make sure the Group Type is “Security” then under “Members” click on “No members selected”, add the service principal in “Add Members” window, click on “Select”, click on “Create”. The new security group will be created after some time.
 
-Check this [instruction] (https://prodata.ie/2023/11/15/service-principal-fabric/) for a visualized guidance
+Check this [instruction](https://prodata.ie/2023/11/15/service-principal-fabric) for a visualized guidance.
